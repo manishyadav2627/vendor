@@ -10,6 +10,7 @@ import { BASE_URL } from "./constants";
 
 
 const Contractor = () => {
+  console.log('test');
     const {email} = useSelector(({app})=>app)
     const [error, setError] = useState('');
 
