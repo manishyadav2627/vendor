@@ -8,7 +8,6 @@ const Vendor = () => {
   const {email} = useSelector(({app})=>app)
 
     const [data,setData] = useState({})
-    const adds = [{email:'xyz',serviceType:'abc',distance:'2'},{email:'xyz',serviceType:'abc',distance:'22'},{email:'xyz',serviceType:'abc',distance:'4'}]
     const fetchData = async() => {
       let response = await axios.get(`${BASE_URL}/vendorsData`)
        if (response?.data?.users?.length > 0) {

@@ -19,7 +19,7 @@ const LoginPageForVendors = () => {
     e.preventDefault();
 
     try {
-      const response = await axios.post(`${BASE_URL}/loginForVendors`, {
+      await axios.post(`${BASE_URL}/loginForVendors`, {
         email,
         password,
       });

@@ -18,7 +18,7 @@ const SignupPage = () => {
     }
 
     try {
-      const response = await axios.post(`${BASE_URL}/signup`, {
+      await axios.post(`${BASE_URL}/signup`, {
         email,
         password,
       });

@@ -1,5 +1,4 @@
-import React, { useEffect, useState } from 'react';
-import Location from './Location';
+import React, { useEffect } from 'react';
 import { useSelector } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
 import Vendor from './Vendor';
@@ -8,9 +7,6 @@ import Contractor from './ContractorPage';
 
 const Third = () => {
   const {success,email,isVendor} = useSelector(({app})=> app)
-
-  const [address, setAddress] = useState('');
-  const [coordinates, setCoordinates] = useState({});
   const navigate = useNavigate();
 
    useEffect(()=>{

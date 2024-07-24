@@ -34,7 +34,7 @@ const SignupForVendors = () => {
 
     try {
         if (email && password && selectedOption && selectedKms &&  (Object.keys(coordinates)?.length > 0)) {
-            const response = await axios.post(`${BASE_URL}/signupForVendors`, {
+            await axios.post(`${BASE_URL}/signupForVendors`, {
                 email,
                 password,
                 service:selectedOption,
